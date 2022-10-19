@@ -202,6 +202,9 @@ footer {
 }
 
 .content-wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
   width: 85%;
 }
 
@@ -212,22 +215,6 @@ footer {
   justify-content: center;
 }
 
-/* set the margins & paddings for each section - these are only a suggestion :) */
-/* setting all margins to zero removes all browser added default margins */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-}
-
-p {
-  margin: 0;
-}
-
-/* then can set the margin & paddings for any element */
 header {
   padding-top: 30px;
   padding-bottom: 60px;
@@ -639,7 +626,7 @@ footer .social-icons li i {
   }
 
   .project-link {
-    margin: 40px 0 60px 0;
+    margin: 20px 0 60px 0;
   }
 
   #skills {
@@ -667,7 +654,7 @@ footer .social-icons li i {
   }
 
   .contact-info {
-    margin: 80px 0;
+    margin: 60px 0;
   }
 
   .contact-title {
@@ -696,13 +683,13 @@ footer .social-icons li i {
     width: 80%;
   }
 
-  .Homeptitle {
+  .header-title {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
   }
 
-  .Homeptitle h2 {
+  .header-title h2 {
     max-width: 80%;
   }
 
@@ -712,7 +699,6 @@ footer .social-icons li i {
   }
 
   .portfolio-piece {
-    width: 45%;
     align-items: center;
   }
 
@@ -758,11 +744,18 @@ footer .social-icons li i {
   /* Footer */
   .contact-wrapper {
     display: flex;
-    justify-content: space-between;
   }
 
   footer .contact-info {
-    width: 33%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+  }
+
+  footer .social {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
   }
 
   footer ul {
@@ -794,12 +787,7 @@ footer .social-icons li i {
   flex-flow: row wrap;
   justify-content: center;
   text-align: center;
-  background-color: red;
-  }
-  
-  p {
-    background-color: green;
-  }
+  }  
 }
 
 @media only screen and (min-width:1200px) {
@@ -841,6 +829,7 @@ footer .social-icons li i {
 
   p {
     font-size: 1.25rem;
+    margin-top: 70px;
   }
 
   .project-link,
@@ -871,10 +860,11 @@ footer .social-icons li i {
   #about {
     padding-top: 80px;
     padding-bottom: 80px;
+    margin-left: 100px;
   }
 
   footer {
-    padding: 140px 0 140px 0;
+    padding: 40px 0 40px 0;
   }
 
   h2 {
@@ -884,7 +874,6 @@ footer .social-icons li i {
   .portfolio-header {
     margin: 0 0 60px 0;
   }
-
   .project-description {
     margin: 0 0 30px 0;
   }
@@ -894,7 +883,7 @@ footer .social-icons li i {
   }
 
   #skills {
-    padding-top: 120px;
+    padding-top: 60px;
   }
 
   #skills .content-wrapper {
@@ -949,7 +938,7 @@ footer .social-icons li i {
 
   /* portfolio */
   .portfolio-piece {
-    width: 30%;
+    width: 25%;
   }
 
   /* skills */
@@ -961,7 +950,7 @@ footer .social-icons li i {
   /* about */
   .about-content-wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly; 
   }
 
   #about figure {
@@ -973,15 +962,55 @@ footer .social-icons li i {
     width: 58%;
   }
 
-  /* contact */
+  /* footer */
+  footer #contact {
+    display: flex;
+    flex-flow: column wrap;
+  }
+
   footer .content-wrapper {
-    max-width: 70%;
+      flex-flow: row;
+      max-width: 90%;
   }
 
   footer .social-icons {
     width: 12.5em;
     justify-content: space-between;
   }
+  
+  footer .contact-info {
+    margin: 0;
+  }
+
+  footer p.copyright {
+    margin-top: 60px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  /* about */
+  .about-content-wrapper {
+    display: flex;
+    justify-content: space-evenly;    
+  }
+
+    /* contact */
+    footer #contact {
+      display: flex;
+      flex-flow: column wrap;
+    }
+    /* footer */
+    footer .content-wrapper {
+      flex-flow: row;
+      max-width: 90%;
+    }
+    footer .contact-info {
+      margin: 0;
+    }
+
+    footer p.copyright {
+      margin-top: 60px;
+    }
 }
 
 
