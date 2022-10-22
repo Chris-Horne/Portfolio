@@ -185,9 +185,6 @@ figure {
   margin: 0;
 }
 
-address {
-  font-style: normal;
-}
 
 /* Structural Styles */
 header,
@@ -236,10 +233,6 @@ nav {
   padding-top: 60px;
   padding-bottom: 60px;
   margin-left: 30px;
-}
-
-footer {
-  padding: 80px 0;
 }
 
 h2 {
@@ -343,11 +336,11 @@ header h2 {
 .portfolio-wrapper {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   flex-flow: row wrap;
 }
 
-.portfolio-piece {
+.sticky-notes-project, .unplugged-project, .guess-the-word-project {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -355,11 +348,9 @@ header h2 {
   align-items: center;
 }
 
-.portfolio-piece h4 {
-  font-weight: bold;
-}
 
-.portfolio-piece figure {
+
+.sticky-notes-project, .unplugged-project, .guess-the-word-project figure {
   width: 100%;
   filter: drop-shadow(1px 2px 6px lightgrey);
 }
@@ -601,16 +592,12 @@ footer .social-icons li i {
     padding-bottom: 80px;
   }
 
-  footer {
-    padding: 140px 0;
-  }
-
   #about {
     padding: 80px 0;
   }
 
   footer {
-    padding-bottom: 80px;
+    padding-bottom: 10px;
   }
 
   h2 {
@@ -698,7 +685,7 @@ footer .social-icons li i {
     justify-content: space-around;
   }
 
-  .portfolio-piece {
+  .sticky-notes-project, .unplugged-project, .guess-the-word-project {
     align-items: center;
   }
 
@@ -926,8 +913,26 @@ footer .social-icons li i {
   }
 
   /* portfolio */
-  .portfolio-piece {
-    width: 25%;
+
+  .sticky-notes-project, .unplugged-project, .guess-the-word-project
+  {
+    width: 30%;
+  }
+
+  .sticky-notes-project a.project-link {
+    margin-top: 80px;
+  }
+
+  .unplugged-project .skills p {
+    margin: 40px 0 40px 0;
+  }
+
+  .unplugged-project .tools p {
+    margin-top: 65px;
+  }
+
+  .guess-the-word-project .project-description p {
+    margin-bottom: 50px;
   }
 
   /* skills */
