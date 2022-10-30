@@ -429,10 +429,8 @@ footer h4 {
   width: 100%;
 }
 
-footer .follow-section {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
+footer .contact-info a {
+  color: #152A3E;
 }
 
 footer .social-icons {
@@ -454,7 +452,7 @@ footer .social-icons li {
 
 footer .social-icons li i {
   font-size: 1.875rem;
-  color: #453e4f;
+  color: #152A3E;
 }
 
 
