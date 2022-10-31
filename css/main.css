@@ -423,8 +423,6 @@ footer .contact-wrapper {
   align-items: flex-start;
 }
 
-
-
 footer h4 {
   width: 100%;
 }
@@ -652,7 +650,7 @@ footer .social-icons li i {
   .contact-title {
     margin: 0 0 30px 0;
   }
-  
+
   header .content-wrapper {
     display: flex;
     justify-content: center;
